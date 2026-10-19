@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Fanny Mallet — Portfolio (Recherche Alternance en Informatique)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Fanny Mallet, étudiante en Master of Science à Epitech Strasbourg. Recherche une alternance en informatique à partir de janvier 2027.">
+    <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&amp;family=Atkinson+Hyperlegible:wght@400;700&amp;family=Barlow+Condensed:wght@600;700;800&amp;display=swap">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>  
+    <header>
+      <h1>MALLET Fanny</h1>
+      <button class="nav_toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <button class="nav_close" aria-label="Fermer le menu">
+          <span></span><span></span>
+        </button>
+        <a href="#hero">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#cursus">Cursus</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <div class="hero_title">
+          <p class="name">Fanny Mallet</p>
+          <p class="description">Recherche une alternance en informatique à partir de janvier 2027</p>
+        </div>
+        <div class="pass">
+          <div class="pass_main">
+            <div class="pass_top">
+              <p>Carte d'embarquement</p>
+            </div>
+            <div class="trip">
+              <p class="departure">
+                <span class="city_code">MAT</span>
+                <span class="city_trip">Mathématiques</span>
+              </p>
+              <div class="trip_path">
+                <span class="trip_arc"></span>
+              </div>
+              <p class="destination">
+                <span class="city_code">INF</span>
+                <span class="city_trip">Informatique</span>
+              </p>
+            </div>
+            <dl class="pass_details">
+              <div><dt>Départ</dt><dd>Janvier 2027</dd></div>
+              <div><dt>Arrivée</dt><dd>Sept. 2029</dd></div>
+              <div><dt>Porte</dt><dd>Epitech Strasbourg</dd></div>
+              <div><dt>Entreprise / école</dt><dd>4 sem. / 2 sem.</dd></div>
+            </dl>  
+          </div>
+          <div class="pass_id">
+            <img class="hero_photo" src="assets/profile.jpg" width="543" height="620" alt="Photo professionnelle de Mallet Fanny">
+            <div class="pass_barcode"></div>
+          </div>
+        </div>
+        <div class="hero__actions">
+          <a class="button button_ghost" href="assets/cv_fanny_mallet.pdf" download><i class="bi bi-download" aria-hidden="true"></i> Télécharger le CV (PDF)</a>
+        </div>
+      </section>
+      <section id="about">
+        <h2>About Me</h2>
+        <div class="about_grid">
+          <div class="passport">
+            <p class="passport_text">Après un Master 1 en mathématiques, qui m'a donné de solides bases analytiques, j'ai voulu donner une dimension plus concrète et appliquée à ces compétences en me tournant vers l'informatique. C'est dans cette optique que j'ai intégré, en septembre 2026, la prépa Master of Science à Epitech Strasbourg.</p>
+            <dl class="passport_data">
+              <div><dt>Lieu de résidence</dt><dd>Strasbourg</dd></div>
+              <div><dt>Permis</dt><dd>B</dd></div>
+            </dl>
+          </div>
+          <div class="soft_skills">
+            <h3>Soft skills</h3>
+            <ul class="stamps">
+              <li class="stamp">Rigueur</li>
+              <li class="stamp">Curiosité</li>
+              <li class="stamp">Sens de l'écoute</li>
+              <li class="stamp">Travail en équipe</li>
+              <li class="stamp">Capacité d'analyse</li>
+            </ul>
+          </div>
+          <div class="interests_cards">
+            <h3>Interests</h3>
+            <ul class="postcards">
+              <li class="postcard postcard_puzzles">
+                <div class="postcard_inner">
+                  <div class="postcard_face postcard_front">
+                    <span class="postcard_symbol puzzle" aria-hidden="true"><span class="bi bi-puzzle-fill"></span></span>
+                    <h3 class="postcard_name">Puzzles &amp; Lego</h3>
+                  </div>
+                  <div class="postcard_face postcard_back">
+                    <h3 class="postcard_header">Carte postale</h3>
+                    <div class="postcard_body">
+                      <div class="postcard_message">
+                        <p class="postcard_text">
+                          Environ 600 puzzles à mon actif.<br>
+                          Plus grand puzzle réalisé : 3000 pièces.</p>
+                      </div>
+                      <div class="postcard_address">
+                        <span class="postcard_stamp" aria-hidden="true"><span class="bi bi-puzzle"></span></span>
+                        <span class="postcard_to"></span>
+                      </div>  
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="postcard postcard_cinema">
+                <div class="postcard_inner">
+                  <div class="postcard_face postcard_front">
+                    <span class="postcard_symbol" aria-hidden="true"><span class="bi bi-camera-reels-fill"></span></span>
+                    <h3 class="postcard_name">Cinéma &amp; séries</h3>
+                  </div>
+                  <div class="postcard_face postcard_back">
+                    <h3 class="postcard_header">Carte postale</h3>
+                    <div class="postcard_body">
+                      <div class="postcard_message">
+                        <p class="postcard_text">Séries : Dark, Severance, Silo</p>
+                        <p class="postcard_text">Movies : Titanic, The Wild Robot, Your Name</p>
+                      </div>
+                      <div class="postcard_address">
+                        <span class="postcard_stamp" aria-hidden="true"><span class="bi bi-camera-reels"></span></span>
+                        <span class="postcard_to"></span>
+                      </div>  
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="postcard postcard_travels">
+                <div class="postcard_inner">
+                  <div class="postcard_face postcard_front">
+                    <span class="postcard_symbol airplane" aria-hidden="true"><span class="bi bi-airplane-fill"></span></span>
+                    <h3 class="postcard_name">Voyages</h3>
+                  </div>
+                  <div class="postcard_face postcard_back">
+                    <h3 class="postcard_header">Carte postale</h3>
+                    <div class="postcard_body">
+                      <div class="postcard_message">
+                        <p class="postcard_text">Toronto, New York, Londres, Dublin, Berlin, Barcelone, Venise, Prague, Copenhagues, Nimègues...</p>
+                      </div>
+                      <div class="postcard_address">
+                        <span class="postcard_stamp" aria-hidden="true"><span class="bi bi-airplane"></span></span>
+                        <span class="postcard_to"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="postcard postcard_games">
+                <div class="postcard_inner">
+                  <div class="postcard_face postcard_front">
+                    <span class="postcard_symbol controller" aria-hidden="true"><span class="bi bi-controller"></span></span>
+                    <h3 class="postcard_name">Jeux vidéo</h3>
+                  </div>
+                  <div class="postcard_face postcard_back">
+                    <h3 class="postcard_header">Carte postale</h3>
+                    <div class="postcard_body">
+                      <div class="postcard_message">
+                        <p class="postcard_text">RPG : <br>Clair Obscur, The Witcher: Wild Hunt, Zelda ...</p>
+                        <p class="postcard_text">Puzzle games : <br>The Thalos Principle</p>
+                      </div>
+                      <div class="postcard_address">
+                        <span class="postcard_stamp" aria-hidden="true"><span class="bi bi-controller"></span></span>
+                        <span class="postcard_to"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div> 
+        </div> 
+      </section>
+      <section id="cursus">
+          <h2>Cursus</h2>
+          <div class="itinerary_grid">
+            <div class="education">
+              <h3>Escales de formation</h3>
+              <ol class="itinerary">
+                <li class="itinerary_stop current">
+                  <p class="when">2026 — 2029</p>
+                  <div class="stop_infos">
+                    <p class="city">Strasbourg</p>
+                    <h4 class="diploma">Prépa Master of Science / Master of Science</h4>
+                    <p class="school">Epitech</p>
+                    <p class="itinerary_badge">Position actuelle</p>
+                  </div>
+                </li>
+                <li class="itinerary_stop">
+                  <p class="when">2024 — 2025</p>
+                  <div class="stop_infos">
+                    <p class="city">Clermont-Ferrand</p>
+                    <h4 class="diploma">M1 MEEF Mathématiques</h4>
+                    <p class="school">INSPE</p>
+                  </div>
+                </li>
+                <li class="itinerary_stop">
+                  <p class="when">2019 — 2023</p>
+                  <div class="stop_infos">
+                    <p class="city">Clermont-Ferrand</p>
+                    <h4 class="diploma">Licence / M1 Mathématiques</h4>
+                    <p class="school">Université Clermont Auvergne</p>
+                  </div>
+                </li>
+                <li class="itinerary_stop">
+                  <p class="when">2018 — 2019</p>
+                  <div class="stop_infos">
+                    <p class="city">Clermont-Ferrand</p>
+                    <h4 class="diploma">CPGE MPSI, 1re année</h4>
+                    <p class="school">Lycée Blaise Pascal</p>
+                  </div>
+                </li>
+                <li class="itinerary_stop">
+                  <p class="when">2015 — 2018</p>
+                  <div class="stop_infos">
+                    <p class="city">Cournon-d'Auvergne</p>
+                    <h4 class="diploma">Bac S, mention européenne anglais</h4>
+                    <p class="school">Lycée René Descartes</p>
+                  </div>
+                </li>
+              </ol>  
+            </div>
+            <div class="experiences">
+              <h3>Expérience professionnelle</h3>
+              <article class="experience">
+                <p class="visa_stamp">Validé<br>2024 — 2025</p>
+                <h4 class="visa_title">Service civique</h4>
+                <p class="visa_infos">Centre Social Protestant / Semis, Strasbourg</p>
+                <p class="visa_description">Accueil physique du public : orienter, renseigner et conseiller.</p>  
+              </article>
+            </div>  
+          </div>   
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="luggages">
+          <div class="luggage_cards">
+            <button type="button" class="luggage_card is_active" data-tab="info">Informatique</button>
+            <button type="button" class="luggage_card" data-tab="maths">Mathématiques</button>
+            <button type="button" class="luggage_card" data-tab="bureautique">Bureautique</button>
+            <button type="button" class="luggage_card" data-tab="langues">Langues</button>
+          </div>
+          <div class="luggage_skills">
+            <ul class="skills_list on_screen" id="info">
+              <li class="skill">Python</li>
+              <li class="skill">HTML</li>
+              <li class="skill">CSS</li>
+              <li class="skill">JavaScript</li>
+              <li class="skill">SQL</li>
+            </ul>
+            <ul class="skills_list" id="maths">
+              <li class="skill">Algorithmique</li>
+              <li class="skill">Raisonnement logique</li>
+              <li class="skill">Résolution de problèmes</li>
+            </ul>
+            <ul class="skills_list" id="bureautique">
+              <li class="skill">Word</li>
+              <li class="skill">Excel</li>
+              <li class="skill">PowerPoint</li>
+            </ul>
+            <ul class="skills_list" id="langues">
+              <li class="skill lang">
+                <h3>Anglais</h3>
+                <div class="lang_level">
+                  <p class="level_label">Compréhension : <strong>B2</strong></p>
+                  <ol class="levels b2">
+                    <li>A1</li>
+                    <li>A2</li>
+                    <li>B1</li>
+                    <li>B2</li>
+                    <li>C1</li>
+                    <li>C2</li>
+                  </ol>
+                </div>
+                <div class="lang_level">
+                  <p class="level_label">Expression : <strong>B1</strong></p>
+                  <ol class="levels b1">
+                    <li>A1</li>
+                    <li>A2</li>
+                    <li>B1</li>
+                    <li>B2</li>
+                    <li>C1</li>
+                    <li>C2</li>
+                  </ol>
+                </div>
+              </li>
+              <li class="skill lang">
+                <h3>Allemand</h3>
+                <div class="lang_level">
+                  <p class="level_label">Niveau général : <strong>A2</strong></p>
+                  <ol class="levels a2">
+                    <li>A1</li>
+                    <li>A2</li>
+                    <li>B1</li>
+                    <li>B2</li>
+                    <li>C1</li>
+                    <li>C2</li>
+                  </ol>
+                </div>
+              </li>
+            </ul>
+          </div> 
+        </div>
+      </section>
+      <section id="projects">
+        <h2>Journal de bord</h2>
+        <p class="section_intro">Mes projets. Filtrez par technologie.</p>
+        <div class="journal_filters">
+          <button type="button" class="filter_button is_active" data-filter="all">All projects</button>
+          <button type="button" class="filter_button" data-filter="html-css">HTML & CSS</button>
+          <button type="button" class="filter_button" data-filter="js">JavaScript</button>
+          <button type="button" class="filter_button" data-filter="sql">SQL</button>
+        </div>
+        <ol class="journal_entries">
+          <li class="entry" data-tech="html-css js">
+            <article class="entry_page">
+                <p class="entry_date">Septembre 2026</p>
+                <h3 class="entry_title" id="dialog_title_portfolio">Mon Portfolio</h3>
+                <p class="entry_text">Mon site portfolio, sur le thème du voyage, pour présenter mon parcours, mes projets et mes compétences.</p>
+                <button type="button" class="more_button" data-dialog="dialog_portfolio">Learn more</button>
+                <dialog class="entry_dialog" id="dialog_portfolio" aria-labelledby="dialog_title_portfolio">
+                  <div class="dialog_content">
+                    <form method="dialog">
+                      <button class="close_dialog" aria-label="fermer">&times;</button>
+                    </form>
+                    <h4 class="entry_subtitle">Contexte et objectifs</h4>
+                    <p class="entry_text">
+                      Projet réalisé en prépa Master of Science à Epitech Strasbourg. Il s'agit de créer un site vitrine personnel, qui évoluera avec mes projets et mes progrès.<br>
+                      J'ai choisi le thème du voyage pour raconter mon passage des mathématiques à l'informatique : une carte d'embarquement pour me présenter, un passeport pour mon profil, un journal de bord pour mes projets.<br>
+                      Le site devait aussi respecter des contraintes précises : fonctionner sur téléphone comme sur ordinateur, être accessible (contrastes, navigation au clavier, textes alternatifs) et être publié en ligne automatiquement à chaque modification.
+                    </p>
+                    <h4 class="entry_subtitle">Compétences</h4>
+                    <ul class="entry_skills">
+                      <li>Intégration responsive (Grid, Flexbox, media queries)</li>
+                      <li>JavaScript : interactions sans framework (filtres, onglets, menu mobile)</li>
+                      <li>Accessibilité (attributs ARIA, navigation au clavier, structure des titres)</li>
+                      <li>UI / UX : mettre en scène un parcours avec un thème visuel</li>
+                      <li>Rédaction : présenter son parcours de façon claire et synthétique</li>
+                    </ul>
+                    <h4 class="entry_subtitle">Link</h4> 
+                  </div>
+                </dialog>
+                <ul class="entry_tech">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </article>
+          </li>
+          <li class="entry" data-tech="html-css js sql">
+            <article class="entry_page">
+                <p class="entry_date">Octobre 2026</p>
+                <h3 class="entry_title" id="dialog_title_jobboard">Jobboard</h3>
+                <p class="entry_text">Une plateforme d'offres d'emploi développée en équipe de trois, avec un espace candidat, un espace entreprise et une administration.</p>
+                <button type="button" class="more_button" data-dialog="dialog_jobboard">Learn more</button>
+                <dialog class="entry_dialog" id="dialog_jobboard" aria-labelledby="dialog_title_jobboard">
+                  <div class="dialog_content">
+                    <form method="dialog">
+                      <button class="close_dialog" aria-label="fermer">&times;</button>
+                    </form>
+                    <h4 class="entry_subtitle">Contexte et objectifs</h4>
+                    <p class="entry_text">
+                      Projet réalisé en équipe de trois en Master of Science à Epitech Strasbourg, en méthode Scrum. Il s'agit de créer un site d'offres d'emploi complet : une base de données, une API et une interface web. 
+                      Les visiteurs consultent les annonces, les candidats postulent, les entreprises publient leurs offres et un administrateur gère l'ensemble du site. <br>
+                      Je me suis chargée des annonces et des entreprises : la base de données et l'API, la page d'accueil avec ses cartes dépliables, les pages d'administration et l'espace où chaque entreprise gère ses propres annonces.
+                    </p>
+                    <h4 class="entry_subtitle">Compétences</h4>
+                    <ul class="entry_skills">
+                      <li>Développement d'une API REST (Node.js, Express, TypeScript)</li>
+                      <li>Base de données relationnelle : modélisation et requêtes avec PostgreSQL et Prisma</li>
+                      <li>Interface en React : composants réutilisables, formulaires, pagination</li>
+                      <li>Travail en équipe : Git (branches, pull requests, revues de code)</li>
+                    </ul>
+                  </div>
+                </dialog>
+                <ul class="entry_tech">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                </ul>    
+            </article>
+          </li>
+        </ol>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <form class="contact_form" data-mailto="MalletFanny@proton.me">
+          <div class="form_message">
+            <label for="message" class="form_label">Message</label>
+            <textarea class="form_input" id="message" name="message" rows="8" required></textarea>
+          </div>
+          <div class="form_infos">
+            <div class="form_stamp">FM</div>
+            <div class="form_field">
+              <label for="name" class="form_label">Nom</label>
+              <input type="text" class="form_input" id="name" name="name" required autocomplete="name">
+            </div>
+            <div class="form_field">
+              <label for="email" class="form_label">Email</label>
+              <input type="email" class="form_input" id="email" name="email" required autocomplete="email">
+            </div>
+            <button type="submit" class="send-btn">Envoyer</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>Fanny Mallet </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
