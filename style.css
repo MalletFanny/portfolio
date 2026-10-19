@@ -365,14 +365,14 @@ img {
 
 .passport_data {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin: 1rem 0 0 0;
   padding-top: 1rem;
   border-top: 1px solid var(--line);
 }
 
-.passport__data dt {                
+.passport_data dt {                
   font-size: 0.8rem;
   color: var(--muted);
 }
@@ -382,10 +382,6 @@ img {
   font-family: var(--font-title);
   font-size: 1.1rem;
   font-weight: 600;
-}
-
-.about_stamps h3 {
-  margin-top: 0;
 }
 
 .stamps {
@@ -976,7 +972,7 @@ img {
   min-width: 300px;
   background-color: var(--paper);
   border-radius: 4px;
-  box-shadow: var(--shadow);
+  box-shadow: 0 22px 45px -20px var(--shadow);
   /* Le papier ligné : un trait fin toutes les 1,9 rem */
   background-image: repeating-linear-gradient(transparent 0 calc(2rem - 1px), var(--line) calc(2rem - 1px) 2rem);
   background-position: 0 1.2rem;
@@ -1274,9 +1270,6 @@ img {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  .postcard_name {
-    font-size: 2.1rem;
-  }
   .postcard_stamp {
     scale: 0.95;                  /* 75 % de la taille normale */
     transform-origin: top right;  /* rétrécit vers le coin haut droit */
@@ -1313,9 +1306,6 @@ img {
 @media (max-width: 450px) {
   .hero_title .name {
     font-size: 3rem;
-  }
-  .postcard_name {
-    font-size: 2.1rem;
   }
   .postcard_message {
     font-size: 1.1rem;
