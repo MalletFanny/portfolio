@@ -81,5 +81,5 @@ main_nav.querySelectorAll("a").forEach((link) => {
 
 nav_close.addEventListener("click", () => {
     close_menu();
-    nav_toggle.focus();
+    nav_toggle.focus({ preventScroll : true });
 });
