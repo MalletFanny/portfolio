@@ -34,6 +34,8 @@
   --aurora-3: rgba(194, 50, 122, 0.12);
   --shadow: rgba(19, 41, 61, 0.55);
   --postmark: rgba(23, 26, 58, 0.45);
+
+  color-scheme: only light;
 }
 
 html {
