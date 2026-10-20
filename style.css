@@ -856,6 +856,26 @@ img {
 .skills_list.on_screen {
   display: grid;
 }
+.skills_list.info.on_screen {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.skills_group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  padding: 0;
+  margin-top: 0;
+  list-style: none;
+}
+.skills_group_title {
+  margin: 1rem 0 0;
+  padding-left: 1rem;
+  font-size: 1.9rem;
+  color: var(--ocean);
+}
 
 .skill {
   text-align: center;
@@ -1261,6 +1281,9 @@ img {
   .skills_list {
     grid-template-columns: 1fr 1fr;  
     gap: 1.5rem;
+  }
+  .skills_group {
+    grid-template-columns: 1fr 1fr;
   }
   #langues, #maths{
    grid-template-columns: 1fr;
