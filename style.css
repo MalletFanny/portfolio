@@ -592,10 +592,15 @@ img {
   padding-bottom: 2rem;
   border-right: 1px solid var(--line);
   font-family: var(--font-hand);
-  font-size: 1.25rem;
+  font-size: clamp(0.87rem, 3.8cqi, 1.3rem);
   line-height: 1.25;
   color: var(--ink);
 }
+.postcard_text_title {
+  text-align: center;
+  margin: 0.4em 0 0.2em;
+}
+
 .postcard_address {
   position: relative;
   display: flex;
@@ -1190,9 +1195,6 @@ img {
 
 /* Responsive : adaptation aux petits écran */
 @media (max-width: 900px) {
-  .postcard_message {
-    font-size: 1.3rem;
-  }
   .postcard_stamp {
     scale: 0.75;
     transform-origin: top right;
@@ -1332,8 +1334,8 @@ img {
   .hero_title .name {
     font-size: 3rem;
   }
-  .postcard_message {
-    font-size: 1.1rem;
+  .postcard_body {
+    grid-template-columns: 2fr 1fr;
   }
   .postcard_stamp {
     scale: 0.7;                  /* 75 % de la taille normale */
