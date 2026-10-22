@@ -55,8 +55,8 @@ html:has(#theme_toggle:checked) {
   --danger: #ff8a9a;
   --on-accent: #15161b;                 /* texte foncé sur les boutons pleins (devenus clairs) */
   --header-bg: rgba(21, 22, 27, 0.9);
-  --shadow: 0 22px 45px -24px rgba(0, 0, 0, 0.75);
- 
+  --shadow: rgba(0, 0, 0, 0.75);
+
   color-scheme: dark;                   /* barres de défilement et listes déroulantes en sombre */
 }
 /* La nuit, les objets en papier gardent leurs couleurs de jour */
@@ -195,7 +195,7 @@ a {
   border-radius: 50%;
   background: var(--sun);
   box-shadow: 0 0 0 4px var(--sun-soft);
-  transition: background-color 0.4s var(--ease), box-shadow 0.4s var(--ease), transform 0.5s var(--ease);
+  transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.5s ease;
 }
 html:has(#theme_toggle:checked) .theme_button_icon {
   background: transparent;
