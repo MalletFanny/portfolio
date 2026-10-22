@@ -165,10 +165,17 @@ header::before {
 }
 
 
-header h1 {
+.site_name {
   margin: 0;
   margin-right: auto;
+  font-family: var(--font-title);
+  color: var(--ink);
   font-size: 1.7rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.site_name:hover {
+  color: var(--ocean);
 }
 
 a {
@@ -222,6 +229,22 @@ html:has(#theme_toggle:checked) .theme_button_icon {
 
 .main-nav a:hover {
   color: var(--ocean);
+}
+.main-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background: var(--sun);
+  transform: scaleX(0);           /* écrasé : invisible */
+  transform-origin: left;         /* grandira depuis la gauche */
+  transition: transform 0.3s ease;
+}
+.main-nav a:hover::after,
+.main-nav a:focus-visible::after {
+  transform: scaleX(1);           /* pleine largeur : visible */
 }
 
 main{
