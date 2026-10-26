@@ -342,7 +342,7 @@ section {
 
 .trip {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto minmax(3rem, 1fr) auto;   /* l'arc garde toujours au moins 3rem */
   align-items: end;
   gap: 1.25rem;
   margin-bottom: 1.5rem;
@@ -350,11 +350,12 @@ section {
 .departure, .destination {
   display: flex;
   flex-direction: column;
+  align-items: center;         /* nom de la ville centré sous son code, des deux côtés */
 }
 
 .city_code {
   font-family: var(--font-title);
-  font-size: 4.75rem;
+  font-size: clamp(3rem, 12vw, 4.75rem);   /* rétrécit avec l'écran : laisse de la place à l'arc */
   font-weight: 800;
   line-height: 0.9;
 }
@@ -730,7 +731,7 @@ img {
   padding-bottom: 2rem;
   border-right: 1px solid var(--line);
   font-family: var(--font-hand);
-  font-size: clamp(0.87rem, 3.8cqi, 1.3rem);
+  font-size: clamp(0.95rem, 3.8cqi, 1.3rem);
   line-height: 1.25;
   color: var(--ink);
 }
@@ -1455,6 +1456,9 @@ img {
 }
 
 @media (max-width: 700px) {
+  .trip {
+    gap: 0.5rem;               /* au lieu de 1.25rem de chaque côté de l'arc */
+  }
   .postcards {
     grid-template-columns: 1fr;
     gap: 2rem;
