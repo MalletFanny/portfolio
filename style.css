@@ -438,6 +438,13 @@ img {
   border-radius: 2px;
 }
 
+.hero_actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
 .button {
   display: inline-flex;                 /* icône et texte alignés sur une ligne */
   align-items: center;                  /* centrés verticalement */
@@ -451,14 +458,33 @@ img {
   font-weight: 700;
   text-decoration: none;                /* enlève le soulignement des liens <a> */
   cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    color 0.25s ease;
 }
-.button_ghost {
+
+.button:hover {
+  transform: translateY(-2px);
+}
+.button:active {
+  transform: translateY(0);
+}
+
+.button_link {
   border-color: var(--ink);
   color: var(--ink);
 }
-.button_ghost:hover {
+.button_download {
+  background: var(--ocean);
+  color: var(--on-accent);
+}
+.button_link:hover {
   background: var(--ink);
   color: var(--sky);
+}
+.button_download:hover {
+  background: var(--ocean-strong);
 }
 
 /* 2. La section About Me -------------------*/
@@ -707,10 +733,6 @@ img {
   font-size: clamp(0.87rem, 3.8cqi, 1.3rem);
   line-height: 1.25;
   color: var(--ink);
-}
-.postcard_text_title {
-  text-align: center;
-  margin: 0.4em 0 0.2em;
 }
 
 .postcard_address {
