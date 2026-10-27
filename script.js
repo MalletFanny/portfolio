@@ -56,7 +56,7 @@ contact_form.addEventListener("submit", (event) => {
     const email = contact_form.elements.email.value.trim();
     const message = contact_form.elements.message.value.trim();
     const subject = `Contact portfolio - ${name}`;
-    const body = `${message}\n\n--\n${name}`;
+    const body = `${message}\n\n\n${name}`;
     window.location.href = `mailto:${contact_form.dataset.mailto}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
 
